@@ -1,0 +1,5 @@
+# The only fields that may differ between arms are `arm` and `w`.
+- {name: graded,      arm: graded, w: 5.0}
+- {name: binary,      arm: binary, w: 5.0}
+- {name: none,        arm: none,   w: 0.0}
+- {name: binary_1000x, arm: binary, w: 5000.0}

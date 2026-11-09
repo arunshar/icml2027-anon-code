@@ -1,0 +1,5 @@
+{
+  "about": "The commit and the training-source digest of the single-commit rerun of the capacity seeds that the appendix of the paper describes. The hash of the commit is replaced by a label, as in equivalence.json and in the test fixtures. The label and the digest are the new_sha and the new_training_sources_digest of the waivers in equivalence.json that name this commit, and the private record of the rerun names the same commit and the same digest.",
+  "rerun_commit": "COMMIT_4",
+  "training_sources_digest": "d5ea80637093bf77d98730fcbfe33043c57a6dbb987fbc253d2cb989037d1751"
+}

@@ -1,0 +1,6 @@
+task_id,task,regime,arm_name,arm,w,w_task,vmax,seed,adv_variant,group_filter,kl_beta
+1,capacity,H,graded_matched,graded,0.25,1.0,0.03,0,grpo,none,0.0
+2,capacity,H,graded_matched,graded,0.25,1.0,0.03,1,grpo,none,0.0
+3,capacity,H,graded_matched,graded,0.25,1.0,0.03,2,grpo,none,0.0
+4,capacity,H,graded_matched,graded,0.25,1.0,0.03,3,grpo,none,0.0
+5,capacity,H,graded_matched,graded,0.25,1.0,0.03,4,grpo,none,0.0

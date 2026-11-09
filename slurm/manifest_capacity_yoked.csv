@@ -1,0 +1,7 @@
+task_id,task,regime,arm_name,arm,w,w_task,vmax,seed,adv_variant,group_filter,kl_beta,keep_schedule
+1,capacity,H,binary_yoked_d0,binary,5.0,1.0,0.03,0,grpo,none,0.0,capacity_w5_s0_d0
+2,capacity,H,binary_yoked_d1,binary,5.0,1.0,0.03,0,grpo,none,0.0,capacity_w5_s0_d1
+3,capacity,H,binary_yoked_d0,binary,5.0,1.0,0.03,1,grpo,none,0.0,capacity_w5_s1_d0
+4,capacity,H,binary_yoked_d1,binary,5.0,1.0,0.03,1,grpo,none,0.0,capacity_w5_s1_d1
+5,capacity,H,binary_yoked_d0,binary,5.0,1.0,0.03,2,grpo,none,0.0,capacity_w5_s2_d0
+6,capacity,H,binary_yoked_d1,binary,5.0,1.0,0.03,2,grpo,none,0.0,capacity_w5_s2_d1

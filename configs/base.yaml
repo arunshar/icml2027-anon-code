@@ -1,0 +1,23 @@
+# Shared by every arm, regime, and seed. Anything that differs between runs other than
+# the arm knob (arm, w) and the regime knob (v_max) is a matched-budget violation.
+model_id: Qwen/Qwen2.5-0.5B-Instruct
+dtype: float32
+full_finetune: true
+group_size: 4          # K
+batch_prompts: 6       # B, all six prompts every step
+steps: 300
+lr: 1.0e-5
+max_new_tokens: 6
+temperature: 1.0
+top_p: 0.95
+top_k: 0
+repetition_penalty: 1.0
+weight_decay: 0.0
+clip_coef: 0.2         # inert at one epoch per batch; kept so the update is a real GRPO update
+kl_in_loss: false      # beta = 0, matching provenance/objection_check.py
+log_kl_to_reference: true
+eval_every: 10
+eval_samples_per_prompt: 16
+eval_generator_seed: 12345
+grad_clip: 1.0
+optimizer: adamw

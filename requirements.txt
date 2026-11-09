@@ -1,0 +1,8 @@
+# The packages that the code and its tests import. The versions of the test run are in README.md.
+torch
+transformers
+numpy
+pyyaml
+pytest
+matplotlib
+huggingface_hub

@@ -1,0 +1,5 @@
+# Regime A is primary. Its v_max is set by local gate 10 so that the step-0 fraction of
+# all-violating groups at K=4 is at least 0.8. Until gate 10 runs it is null and the
+# matched-budget test refuses to build the manifest.
+A: {v_max: 5.0, target_all_violating_fraction_at_step0: 0.8}   # calibrated 2026-09-11, see LEDGER.md
+B: {v_max: 30.0}

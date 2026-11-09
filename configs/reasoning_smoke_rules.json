@@ -1,0 +1,28 @@
+{
+ "S": 300,
+ "memory_limit_bytes": 36000000000,
+ "planning_minutes": 120.0,
+ "schema": "wo_i_reasoning_smoke_rules_v1",
+ "selection_sha256": "2dbcf749e2599408e8059dee3300ccb7f207f376bcadbad211f01e17015b5ec7",
+ "sizes": {
+  "0.5b": {
+   "peak_memory_allocated_bytes": 13280615424,
+   "peak_memory_reserved_bytes": 13583253504,
+   "projected_minutes_by_S": {
+    "150": 14.455783148815756,
+    "200": 17.40896909927067,
+    "300": 23.315341000180492
+   },
+   "status": "ok"
+  }
+ },
+ "sizes_kept": [
+  "0.5b"
+ ],
+ "sizes_stopped": [],
+ "slowest_projected_minutes_by_S": {
+  "150": 14.455783148815756,
+  "200": 17.40896909927067,
+  "300": 23.315341000180492
+ }
+}

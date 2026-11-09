@@ -1,0 +1,2 @@
+task_id,kind,stage,size,model_id,model_revision,arm,form,w,w_task,adv_variant,group_filter,seed,steps,L,micro_batch,dataset_sha256,selection_sha256
+1,smoke,0,0.5b,Qwen/Qwen2.5-0.5B-Instruct,7ae557604adf67be50417f59c2c2f167def9a775,plain,linear,2.0,1.0,grpo,none,100,20,512,2,fa9273fc0d41aad38c2a46f3ea8b798101d011492b858a63414619864685cb74,2dbcf749e2599408e8059dee3300ccb7f207f376bcadbad211f01e17015b5ec7

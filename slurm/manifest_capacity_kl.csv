@@ -1,0 +1,10 @@
+task_id,task,regime,arm_name,arm,w,w_task,vmax,seed,adv_variant,group_filter,kl_beta
+1,capacity,H,graded_kl,graded,5.0,1.0,0.03,0,grpo,none,0.04
+2,capacity,H,graded_kl,graded,5.0,1.0,0.03,1,grpo,none,0.04
+3,capacity,H,graded_kl,graded,5.0,1.0,0.03,2,grpo,none,0.04
+4,capacity,H,binary_kl,binary,5.0,1.0,0.03,0,grpo,none,0.04
+5,capacity,H,binary_kl,binary,5.0,1.0,0.03,1,grpo,none,0.04
+6,capacity,H,binary_kl,binary,5.0,1.0,0.03,2,grpo,none,0.04
+7,capacity,H,none_kl,none,0.0,1.0,0.03,0,grpo,none,0.04
+8,capacity,H,none_kl,none,0.0,1.0,0.03,1,grpo,none,0.04
+9,capacity,H,none_kl,none,0.0,1.0,0.03,2,grpo,none,0.04

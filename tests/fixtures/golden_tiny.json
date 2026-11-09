@@ -1,0 +1,875 @@
+{
+ "cases": {
+  "capacity": {
+   "argv": [
+    "--task",
+    "capacity",
+    "--arm",
+    "binary",
+    "--w",
+    "5",
+    "--vmax",
+    "0.03",
+    "--steps",
+    "3",
+    "--tiny",
+    "--device",
+    "cpu",
+    "--eval-every",
+    "2",
+    "--eval-samples",
+    "2",
+    "--batch-prompts",
+    "2",
+    "--seed",
+    "0",
+    "--backward-per-group",
+    "--max-new-tokens",
+    "24"
+   ],
+   "config": {
+    "arm": "binary",
+    "backward_per_group": true,
+    "batch_prompts": 2,
+    "clip_coef": 0.2,
+    "device": "cpu",
+    "eval_every": 2,
+    "eval_samples": 2,
+    "eval_seed": 12345,
+    "grad_clip": 1.0,
+    "group_size": 4,
+    "lr": 1e-05,
+    "max_new_tokens": 24,
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "no_ref": false,
+    "regime": "",
+    "repetition_penalty": 1.0,
+    "seed": 0,
+    "steps": 3,
+    "task": "capacity",
+    "temperature": 1.0,
+    "tiny": true,
+    "top_k": 0,
+    "top_p": 0.95,
+    "vmax": 0.03,
+    "w": 5.0,
+    "w_task": 1.0,
+    "weight_decay": 0.0
+   },
+   "final_param_checksum": "00a328204504cc91879e041cc71f2989ee3afe4db76078d6676c9649c3a5ff47",
+   "records": [
+    {
+     "eval_mean_n_selected": null,
+     "eval_mean_residual": null,
+     "eval_n": 4,
+     "eval_parse_fail_rate": 1.0,
+     "eval_selections": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "eval_violation_rate": 1.0,
+     "phase": "eval",
+     "step": 0
+    },
+    {
+     "all_violating_fraction": 1.0,
+     "frac_violators_pos_adv": 0.0,
+     "group_reward_std_mean": 0.0,
+     "groups": [
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "selections": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "selections": [
+        null,
+        null,
+        null,
+        null
+       ]
+      }
+     ],
+     "kl_seq_mean": 0.0,
+     "mean_n_selected": null,
+     "mean_residual": null,
+     "parse_fail_rate": 1.0,
+     "pg_loss": 0.0,
+     "phase": "train",
+     "reward_mean": -15.0,
+     "step": 1,
+     "violation_rate": 1.0,
+     "violator_mean_adv": 0.0
+    },
+    {
+     "all_violating_fraction": 0.5,
+     "frac_violators_pos_adv": 0.0,
+     "group_reward_std_mean": 3.75,
+     "groups": [
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "selections": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        -0.4999999333333422,
+        -0.4999999333333422,
+        -0.4999999333333422,
+        1.4999998000000265
+       ],
+       "all_violating": false,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        0.0
+       ],
+       "selections": [
+        null,
+        null,
+        null,
+        [
+         1
+        ]
+       ]
+      }
+     ],
+     "kl_seq_mean": 0.0,
+     "mean_n_selected": 0.0,
+     "mean_residual": 0.0,
+     "parse_fail_rate": 0.875,
+     "pg_loss": 0.0,
+     "phase": "train",
+     "reward_mean": -13.125,
+     "step": 2,
+     "violation_rate": 0.875,
+     "violator_mean_adv": -0.2142856857142895
+    },
+    {
+     "eval_mean_n_selected": null,
+     "eval_mean_residual": null,
+     "eval_n": 4,
+     "eval_parse_fail_rate": 1.0,
+     "eval_selections": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "eval_violation_rate": 1.0,
+     "phase": "eval",
+     "step": 2
+    },
+    {
+     "all_violating_fraction": 1.0,
+     "frac_violators_pos_adv": 0.0,
+     "group_reward_std_mean": 0.0,
+     "groups": [
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "selections": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "selections": [
+        null,
+        null,
+        null,
+        null
+       ]
+      }
+     ],
+     "kl_seq_mean": -0.000843048095703125,
+     "mean_n_selected": null,
+     "mean_residual": null,
+     "parse_fail_rate": 1.0,
+     "pg_loss": 0.0,
+     "phase": "train",
+     "reward_mean": -15.0,
+     "step": 3,
+     "violation_rate": 1.0,
+     "violator_mean_adv": 0.0
+    },
+    {
+     "eval_mean_n_selected": null,
+     "eval_mean_residual": null,
+     "eval_n": 4,
+     "eval_parse_fail_rate": 1.0,
+     "eval_selections": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "eval_violation_rate": 1.0,
+     "phase": "eval",
+     "step": 3
+    }
+   ]
+  },
+  "speed": {
+   "argv": [
+    "--arm",
+    "binary",
+    "--w",
+    "5",
+    "--vmax",
+    "5",
+    "--steps",
+    "3",
+    "--tiny",
+    "--device",
+    "cpu",
+    "--eval-every",
+    "2",
+    "--eval-samples",
+    "2",
+    "--batch-prompts",
+    "6",
+    "--seed",
+    "3",
+    "--max-new-tokens",
+    "24"
+   ],
+   "config": {
+    "arm": "binary",
+    "backward_per_group": false,
+    "batch_prompts": 6,
+    "clip_coef": 0.2,
+    "device": "cpu",
+    "eval_every": 2,
+    "eval_samples": 2,
+    "eval_seed": 12345,
+    "grad_clip": 1.0,
+    "group_size": 4,
+    "lr": 1e-05,
+    "max_new_tokens": 24,
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "no_ref": false,
+    "regime": "",
+    "repetition_penalty": 1.0,
+    "seed": 3,
+    "steps": 3,
+    "task": "speed",
+    "temperature": 1.0,
+    "tiny": true,
+    "top_k": 0,
+    "top_p": 0.95,
+    "vmax": 5.0,
+    "w": 5.0,
+    "w_task": 1.0,
+    "weight_decay": 0.0
+   },
+   "final_param_checksum": "12942fc1971020a395fe5454e3955561154725552cd77fe5f78864919e934f61",
+   "records": [
+    {
+     "eval_mean_residual": null,
+     "eval_mean_speed": null,
+     "eval_n": 12,
+     "eval_parse_fail_rate": 1.0,
+     "eval_speeds": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "eval_violation_rate": 1.0,
+     "phase": "eval",
+     "step": 0
+    },
+    {
+     "all_violating_fraction": 1.0,
+     "frac_violators_pos_adv": 0.0,
+     "group_reward_std_mean": 0.0,
+     "groups": [
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      }
+     ],
+     "kl_seq_mean": 0.0,
+     "mean_residual": null,
+     "mean_speed": null,
+     "parse_fail_rate": 1.0,
+     "pg_loss": 0.0,
+     "phase": "train",
+     "reward_mean": -15.0,
+     "step": 1,
+     "violation_rate": 1.0,
+     "violator_mean_adv": 0.0
+    },
+    {
+     "all_violating_fraction": 0.8333333333333334,
+     "frac_violators_pos_adv": 0.0,
+     "group_reward_std_mean": 0.8666666666666667,
+     "groups": [
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        -0.4999999038461722,
+        -0.4999999038461722,
+        1.499999711538517,
+        -0.4999999038461722
+       ],
+       "all_violating": false,
+       "has_violator": true,
+       "rewards": [
+        -10.0,
+        -10.0,
+        0.4,
+        -10.0
+       ],
+       "speeds": [
+        null,
+        null,
+        4.0,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      }
+     ],
+     "kl_seq_mean": 0.0,
+     "mean_residual": 0.0,
+     "mean_speed": 4.0,
+     "parse_fail_rate": 0.9583333333333334,
+     "pg_loss": -1.2417634698280722e-09,
+     "phase": "train",
+     "reward_mean": -13.733333333333334,
+     "step": 2,
+     "violation_rate": 0.9583333333333334,
+     "violator_mean_adv": -0.0652173787625442
+    },
+    {
+     "eval_mean_residual": null,
+     "eval_mean_speed": null,
+     "eval_n": 12,
+     "eval_parse_fail_rate": 1.0,
+     "eval_speeds": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "eval_violation_rate": 1.0,
+     "phase": "eval",
+     "step": 2
+    },
+    {
+     "all_violating_fraction": 1.0,
+     "frac_violators_pos_adv": 0.0,
+     "group_reward_std_mean": 0.0,
+     "groups": [
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "adv": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+       ],
+       "all_violating": true,
+       "has_violator": true,
+       "rewards": [
+        -15.0,
+        -15.0,
+        -15.0,
+        -15.0
+       ],
+       "speeds": [
+        null,
+        null,
+        null,
+        null
+       ]
+      }
+     ],
+     "kl_seq_mean": -0.00037892660475336015,
+     "mean_residual": null,
+     "mean_speed": null,
+     "parse_fail_rate": 1.0,
+     "pg_loss": 0.0,
+     "phase": "train",
+     "reward_mean": -15.0,
+     "step": 3,
+     "violation_rate": 1.0,
+     "violator_mean_adv": 0.0
+    },
+    {
+     "eval_mean_residual": null,
+     "eval_mean_speed": null,
+     "eval_n": 12,
+     "eval_parse_fail_rate": 1.0,
+     "eval_speeds": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ],
+     "eval_violation_rate": 1.0,
+     "phase": "eval",
+     "step": 3
+    }
+   ]
+  }
+ },
+ "recorded_at_commit": "COMMIT_5",
+ "versions": {
+  "machine": "arm64",
+  "numpy": "2.5.3",
+  "python": "3.12.13",
+  "torch": "2.14.0",
+  "transformers": "5.17.0"
+ }
+}

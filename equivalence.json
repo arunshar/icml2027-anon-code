@@ -1,0 +1,103 @@
+{
+  "about": "Fingerprint waivers that let runs made after a training-source change sit beside runs made before it. Each waiver is written by 'analyze.py fingerprint', and the analysis re-verifies every recorded outcome from the run directories before it honours one. Every path is repo-relative. An empty list means no such comparison is admitted.",
+  "schema": 1,
+  "waivers": [
+    {
+      "base_sha": "COMMIT_5",
+      "fingerprints": [
+        {
+          "name": "F1",
+          "new": "experiments/cancellation/runs/758244/1_A_binary_s0",
+          "outcome": "pass",
+          "reference": "experiments/cancellation/runs/430542/4_A_binary_s0",
+          "rerun_at_base": "experiments/cancellation/runs/758269/4_A_binary_s0",
+          "steps": 300
+        },
+        {
+          "allow_drift": true,
+          "name": "F4",
+          "new": "experiments/cancellation/runs/758246/4_H_binary_s0",
+          "outcome": "drift_pass",
+          "reference": "experiments/cancellation/runs/572991/4_H_binary_s0",
+          "rerun_at_base": "experiments/cancellation/runs/758270/4_H_binary_s0",
+          "steps": 30
+        }
+      ],
+      "new_sha": "COMMIT_4",
+      "new_training_sources_digest": "d5ea80637093bf77d98730fcbfe33043c57a6dbb987fbc253d2cb989037d1751"
+    },
+    {
+      "base_sha": "COMMIT_6",
+      "fingerprints": [
+        {
+          "allow_drift": false,
+          "name": "F1b",
+          "new": "experiments/cancellation/runs/758244/1_A_binary_s0",
+          "outcome": "pass",
+          "reference": "experiments/cancellation/runs/430542/4_A_binary_s0",
+          "rerun_at_base": "experiments/cancellation/runs/430542/4_A_binary_s0",
+          "steps": 300
+        }
+      ],
+      "new_sha": "COMMIT_4",
+      "new_training_sources_digest": "d5ea80637093bf77d98730fcbfe33043c57a6dbb987fbc253d2cb989037d1751"
+    },
+    {
+      "base_sha": "COMMIT_6",
+      "fingerprints": [
+        {
+          "allow_drift": false,
+          "name": "G1",
+          "new": "experiments/cancellation/runs/1722901/1_A_binary_s0",
+          "outcome": "pass",
+          "reference": "experiments/cancellation/runs/430542/4_A_binary_s0",
+          "rerun_at_base": "experiments/cancellation/runs/430542/4_A_binary_s0",
+          "steps": 300
+        }
+      ],
+      "new_sha": "COMMIT_3",
+      "new_training_sources_digest": "6afdaa1fa50c1126c3278aa33887d4be4ec47e5283097bda081bfa563e3300aa"
+    },
+    {
+      "base_sha": "COMMIT_4",
+      "fingerprints": [
+        {
+          "allow_drift": false,
+          "name": "G1b",
+          "new": "experiments/cancellation/runs/1722901/1_A_binary_s0",
+          "outcome": "pass",
+          "reference": "experiments/cancellation/runs/758244/1_A_binary_s0",
+          "rerun_at_base": "experiments/cancellation/runs/758244/1_A_binary_s0",
+          "steps": 300
+        },
+        {
+          "allow_drift": true,
+          "name": "G4",
+          "new": "experiments/cancellation/runs/1722902/4_H_binary_s0",
+          "outcome": "drift_pass",
+          "reference": "experiments/cancellation/runs/572991/4_H_binary_s0",
+          "rerun_at_base": "experiments/cancellation/runs/758246/4_H_binary_s0",
+          "steps": 30
+        }
+      ],
+      "new_sha": "COMMIT_3",
+      "new_training_sources_digest": "6afdaa1fa50c1126c3278aa33887d4be4ec47e5283097bda081bfa563e3300aa"
+    },
+    {
+      "base_sha": "COMMIT_5",
+      "fingerprints": [
+        {
+          "allow_drift": true,
+          "name": "G4b",
+          "new": "experiments/cancellation/runs/1722902/4_H_binary_s0",
+          "outcome": "drift_pass",
+          "reference": "experiments/cancellation/runs/572991/4_H_binary_s0",
+          "rerun_at_base": "experiments/cancellation/runs/758270/4_H_binary_s0",
+          "steps": 30
+        }
+      ],
+      "new_sha": "COMMIT_3",
+      "new_training_sources_digest": "6afdaa1fa50c1126c3278aa33887d4be4ec47e5283097bda081bfa563e3300aa"
+    }
+  ]
+}

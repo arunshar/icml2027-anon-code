@@ -1,0 +1,13 @@
+task_id,task,regime,arm_name,arm,w,w_task,vmax,seed,adv_variant,group_filter,kl_beta
+1,capacity,H,binary_drgrpo,binary,5.0,1.0,0.03,0,drgrpo,none,0.0
+2,capacity,H,binary_drgrpo,binary,5.0,1.0,0.03,1,drgrpo,none,0.0
+3,capacity,H,binary_drgrpo,binary,5.0,1.0,0.03,2,drgrpo,none,0.0
+4,capacity,H,binary_ngrpo,binary,5.0,1.0,0.03,0,ngrpo_feasible,none,0.0
+5,capacity,H,binary_ngrpo,binary,5.0,1.0,0.03,1,ngrpo_feasible,none,0.0
+6,capacity,H,binary_ngrpo,binary,5.0,1.0,0.03,2,ngrpo_feasible,none,0.0
+7,capacity,H,binary_vfilter,binary,5.0,1.0,0.03,0,grpo,verdict_mixed,0.0
+8,capacity,H,binary_vfilter,binary,5.0,1.0,0.03,1,grpo,verdict_mixed,0.0
+9,capacity,H,binary_vfilter,binary,5.0,1.0,0.03,2,grpo,verdict_mixed,0.0
+10,capacity,H,binary_sfilter,binary,5.0,1.0,0.03,0,grpo,reward_spread,0.0
+11,capacity,H,binary_sfilter,binary,5.0,1.0,0.03,1,grpo,reward_spread,0.0
+12,capacity,H,binary_sfilter,binary,5.0,1.0,0.03,2,grpo,reward_spread,0.0

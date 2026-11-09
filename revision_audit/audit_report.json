@@ -1,0 +1,138 @@
+{
+  "summary": {
+    "recorded_runs": 51,
+    "arms": 13,
+    "fully_feasible_runs": 24,
+    "fully_feasible_all_empty_runs": 23,
+    "fully_feasible_runs_with_nonempty_outputs": 1,
+    "evaluation_samples_per_seed": 96,
+    "nonempty_feasible_samples_all_runs": 96,
+    "total_evaluation_samples": 4896
+  },
+  "arithmetic": {
+    "ngrpo_population_advantage": 0.49999937500078107,
+    "hypothetical_sample_advantage": 0.44721309550051686,
+    "parser_examples": {
+      "[]": [],
+      "[foo]": [],
+      "[99]": [],
+      "[1.5]": [
+        1,
+        5
+      ],
+      "[0, 3, 7]": [
+        0,
+        3,
+        7
+      ]
+    },
+    "non_equivariant_baseline_shift": [
+      -2.5,
+      -2.5,
+      -2.5,
+      -2.5
+    ],
+    "monotone_residual_counterexample_rewards": [
+      -1.0,
+      98.0
+    ],
+    "speed_reward_slopes": {
+      "A": -99.9,
+      "B": -16.566666666666666
+    },
+    "capacity_ordering": [
+      {
+        "capacity_ratio": 0.03,
+        "weight": 5.0,
+        "instance": 0,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 81.73333333333338
+      },
+      {
+        "capacity_ratio": 0.03,
+        "weight": 5.0,
+        "instance": 1,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 82.33333333333337
+      },
+      {
+        "capacity_ratio": 0.03,
+        "weight": 5.0,
+        "instance": 2,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 99.88461538461536
+      },
+      {
+        "capacity_ratio": 0.03,
+        "weight": 5.0,
+        "instance": 3,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 99.13636363636361
+      },
+      {
+        "capacity_ratio": 0.03,
+        "weight": 5.0,
+        "instance": 4,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 81.92156862745102
+      },
+      {
+        "capacity_ratio": 0.03,
+        "weight": 5.0,
+        "instance": 5,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 99.27777777777774
+      },
+      {
+        "capacity_ratio": 0.2,
+        "weight": 5.0,
+        "instance": 0,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 12.300751879699288
+      },
+      {
+        "capacity_ratio": 0.2,
+        "weight": 5.0,
+        "instance": 1,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 12.259344012204464
+      },
+      {
+        "capacity_ratio": 0.2,
+        "weight": 5.0,
+        "instance": 2,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 14.681338028169014
+      },
+      {
+        "capacity_ratio": 0.2,
+        "weight": 5.0,
+        "instance": 3,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 14.189489835059442
+      },
+      {
+        "capacity_ratio": 0.2,
+        "weight": 5.0,
+        "instance": 4,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 11.852258852258807
+      },
+      {
+        "capacity_ratio": 0.2,
+        "weight": 5.0,
+        "instance": 5,
+        "strict_order_across_unequal_residuals": true,
+        "minimum_feasible_reward_margin": 14.163009404388701
+      }
+    ]
+  },
+  "definitions": {
+    "seed_success": "A seed has zero violation across its complete final evaluation.",
+    "wilson_interval": "Each training seed supplies one observation for the descriptive 95% Wilson interval.",
+    "nonempty_feasible_fraction": "The numerator counts parsed nonempty feasible outputs. The denominator includes every evaluation completion.",
+    "normalized_feasible_value": "Feasible parsed outputs receive their value divided by the instance optimum. Other outputs receive zero.",
+    "parser_limit": "The saved parsed selections cannot certify the original output format.",
+    "replay_limit": "Counterfactual weights rescore recorded groups and do not estimate retrained-policy outcomes."
+  }
+}

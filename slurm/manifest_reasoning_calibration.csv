@@ -1,0 +1,5 @@
+task_id,kind,stage,size,model_id,model_revision,split,samples,max_new_tokens,chunk_problems,seed,dataset_sha256
+1,calibration,0,0.5b,Qwen/Qwen2.5-0.5B-Instruct,7ae557604adf67be50417f59c2c2f167def9a775,train,8,512,8,0,fa9273fc0d41aad38c2a46f3ea8b798101d011492b858a63414619864685cb74
+2,calibration,0,0.5b,Qwen/Qwen2.5-0.5B-Instruct,7ae557604adf67be50417f59c2c2f167def9a775,test,8,512,8,0,fa9273fc0d41aad38c2a46f3ea8b798101d011492b858a63414619864685cb74
+3,calibration,0,1.5b,Qwen/Qwen2.5-1.5B-Instruct,989aa7980e4cf806f80c7fef2b1adb7bc71aa306,train,8,512,8,0,fa9273fc0d41aad38c2a46f3ea8b798101d011492b858a63414619864685cb74
+4,calibration,0,1.5b,Qwen/Qwen2.5-1.5B-Instruct,989aa7980e4cf806f80c7fef2b1adb7bc71aa306,test,8,512,8,0,fa9273fc0d41aad38c2a46f3ea8b798101d011492b858a63414619864685cb74
